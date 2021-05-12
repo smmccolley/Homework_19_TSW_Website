@@ -1,0 +1,362 @@
+
+ /*Navigation*/
+
+.primaryNav {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 300px 300px;
+    grid-template-areas:
+        "logo navBar"
+        "heroProject heroProject";
+    margin: 0px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,012840+84,012840+84&0+0,0.9+100;TSW */
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(1,40,64,0.76) 84%, rgba(1,40,64,0.9) 100%),url(../images-folder/recess_hero.jpg); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(1,40,64,0.76) 84%,rgba(1,40,64,0.9) 100%),url(../images-folder/recess_hero.jpg); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(1,40,64,0.76) 84%,rgba(1,40,64,0.9) 100%),url(../images-folder/recess_hero.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e6012840',GradientType=0 ); /* IE6-9 */   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#logo {
+    grid-area: logo;
+    display: flex;
+    position: relative;
+    transform: scale(.35);
+    margin-left: -15%;
+    justify-content: flex-start;
+}
+.navBar {
+    display: flex;
+    grid-area: navBar;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-right: 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.heroProject {
+    margin-left: 5%;
+    grid-area: heroProject;
+    padding: 3%;
+    color: white;
+    width: 85%;
+}
+.heroProject h3 {
+    color: white;
+    font-weight: 700px;
+}
+
+/*Studios*/
+
+.problem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 300px;
+    grid-template-areas:
+        "problemTitle problemTitle"
+        "problemText problemText2";
+    grid-gap: 3%;
+    width: 85%;
+    text-align: left;
+    font-weight: 700;
+    margin-left: 8%;
+    margin-top: 5%;
+}
+#problemTitle {
+    display: grid;
+    grid-area: problemTitle;
+    color: #187AA5;
+}
+
+.users{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 300px;
+    grid-template-areas:
+        "personaImage userTitle"
+        "personaImage userText";
+    grid-gap: 3%;
+    width: 85%;
+    text-align: left;
+    font-weight: 700;
+    margin-left: 8%;
+}
+#userTitle {
+    display: grid;
+    grid-area: userTitle;
+    color: #187AA5;
+}
+#userText {
+    grid-area: userText;
+}
+
+#personaImage {
+    grid-area: personaImage;
+    background-image: url(../images-folder/persona.jpg);
+    background-size: cover;
+    margin-left:3%;
+}
+
+/**Process**/
+
+.affinityThemes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 550px;
+    grid-template-areas:
+        "themes themes themes";  
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 3%;
+}
+
+#themes {
+    grid-area: themes;
+    background-image: url(../images-folder/recess_common_themes.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.recessPunTitle {
+    grid-area: recessPun;
+    margin-left: 15%;
+    color: #187AA5;
+    margin-top: 5%;
+}
+.recessPun {
+    font-weight: 700;
+    width: 75%;
+}
+#recessDescSubtitle {
+    font-weight: 700;
+    width: 75%;
+}
+#recessDescText {
+    font-weight: 200px;
+    width: 75%;
+}
+
+/*PROTOTYPES*/
+
+.prototypes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px;
+    grid-gap: 3%;
+    grid-template-areas:
+        "sketches midfidelity highfidelity";
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+#sketches {
+    grid-area: sketches;
+    background-image: url(../images-folder/recess_sketches.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-left: 15%;
+}
+
+#midfidelity {
+    grid-area: midfidelity;
+    background-image: url(../images-folder/recess_midfi.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #187AA5;
+    align-content: end;
+    justify-content: end;
+}
+
+#highfidelity {
+    grid-area: highfidelity;
+    background-image: url(../images-folder/recess_highfi.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #187AA5;
+    align-content: end;
+    justify-content: end;
+}
+#sketchesTitle {
+    font-weight: 700;
+    color: black;
+    font-size: 16px;
+    text-align: right;
+}
+
+#sketchesText {
+    font-weight: 300;
+    color: black;
+    font-size: 16px;
+    text-align: right;
+
+}
+
+#midfiTitle {
+    font-weight: 700;
+    color: black;
+    font-size: 16px;
+    text-align: right;
+}
+
+#midfiText {
+    font-weight: 300;
+    color: black;
+    font-size: 16px;
+    text-align: right;
+}
+
+#highfiTitle {
+    font-weight: 700;
+    color: black;
+    font-size: 16px;
+    text-align: right;
+}
+
+#highfiText {
+    font-weight: 300;
+    color: black;
+    font-size: 16px;
+    text-align: right;
+}
+
+/**RESULTS OF CASE STUDY**/
+
+.parksandRecTitle {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px;
+    grid-template-areas: 
+        "parksAndRec";
+    margin-left: 55%;
+    color: #187AA5;
+    margin-right: 5%;
+}
+
+.results {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 300px 50px 50px;
+    grid-template-areas:
+        "resultsDesc appGrid"
+        "linkPrototype appGrid"
+        "linkCaseStudy appGrid";
+    margin-left: 15%;
+    grid-gap: 3%;
+    margin-bottom: 5%;
+    margin-right: 3%;
+}
+
+#appGrid {
+    grid-area: appGrid;
+    background-image: url(../images-folder/recess_grid.png);
+    background-size: cover;
+}
+
+#resultsDesc {
+    font-weight: 300px;
+}
+
+#linkPrototype {
+    font-weight: 900;
+    text-decoration: underline;
+    border-color: none;
+    border-style: none;
+    background-color: transparent;
+    text-align: left;
+}
+
+#linkCaseStudy {
+    font-weight: 900;
+    text-decoration: underline;
+    border-color: none;
+    border-style: none;
+    background-color: transparent;
+    text-align: left;
+
+}
+            
+            
+/*Footer*/
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 300px;
+    grid-gap: 6%;
+    grid-template-areas:
+        "sayHello sayHello"
+        "footerLeft footerRight";
+    background-color: #187AA5;
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+.sayHello {
+    grid-area: sayHello;
+    font-weight: 700px;
+    color: #C1D959;
+    margin-left: 9%;
+    padding: 3%;
+    margin-bottom: 5%;
+}
+.footerLeft {
+    grid-area: footerLeft;
+    margin-left: 25%;
+    margin-top: 5%;
+    color: white;
+}
+
+.footerRight {
+    grid-area: footerRight;
+    margin-top: 5%;
+}
+.team {
+    font-weight: 700;
+    color: white;
+}
+.designTeam {
+    color: white;
+    width: 500px;
+}
+.whitePrimary {
+    font-weight: 200;
+    border: 1.5px solid white;
+    background-color: transparent;
+    color: white;
+    width: 200px;
+}
+/* Typography CSS */
+
+h1 {
+    font-size: 45px;
+    margin: 0px 0px;
+    font-weight: 700px;
+    font-family: 'Poppins', sans-serif;
+}
+h2 {
+    font-size: 35px;
+    margin: 0px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+  
+h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+  
+h4 {
+    color: black;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
