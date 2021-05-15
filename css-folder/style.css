@@ -26,6 +26,11 @@
     margin-left: -15%;
     justify-content: flex-start;
 }
+
+#logo :hover {
+    transform: scale(1.25);
+    transition: transform .3s;
+}
 .navBar {
     display: flex;
     grid-area: navBar;
@@ -37,21 +42,30 @@
     margin-right: 10%;
     align-items: center;
     justify-content: space-between;
+    padding: 1%;
+    border-bottom: 3px solid transparent;
 }
 a {
     color: white;
     text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+
+.navBar a:hover {
+    border-bottom: 3px solid #187AA5;
+    transition: 0.3s;
 }
 a:active {
     color: white;
-    text-decoration: underline, #187AA5;
+    border-bottom: 3px solid #187AA5;
+    
 }
 .heroProject p {
     margin-left: 20%;
     color: white;
     width: 90%;
     font-weight: 700;
-    margin-top: 30%;
+    margin-top: 60%;
 }
 
 /*Studios*/
@@ -91,6 +105,19 @@ a:active {
     align-items: center;
     
 }
+#planning :hover{
+    display: flex;
+    grid-area: planning;
+    background: -moz-linear-gradient(top, rgba(24,122,165,0.9) 0%, rgba(1,40,64,0.56) 84%, rgba(1,40,64,0.5) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(24,122,165,0.9) 0%,rgba(1,40,64,0.56) 84%,rgba(1,40,64,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(24,122,165,0.9) 0%,rgba(1,40,64,0.56) 84%,rgba(1,40,64,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6187aa5', endColorstr='#80012840',GradientType=0 ); 
+    margin-left: 0%;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+}
 #architecture {
     display: flex;
     grid-area: architecture;
@@ -98,6 +125,20 @@ a:active {
     background-size: cover;
     justify-content: center;
     align-items: center;
+}
+
+#architecture :hover{
+    display: flex;
+    grid-area: architecture;
+    background: -moz-linear-gradient(top, rgba(24,122,165,0.9) 0%, rgba(1,40,64,0.56) 84%, rgba(1,40,64,0.5) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(24,122,165,0.9) 0%,rgba(1,40,64,0.56) 84%,rgba(1,40,64,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(24,122,165,0.9) 0%,rgba(1,40,64,0.56) 84%,rgba(1,40,64,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6187aa5', endColorstr='#80012840',GradientType=0 ); 
+    margin-left: 0%;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
 }
 
 #larch {
@@ -108,6 +149,20 @@ a:active {
     justify-content: center;
     align-items: center;
 
+}
+
+#larch :hover{
+    display: flex;
+    grid-area: larch;
+    background: -moz-linear-gradient(top, rgba(24,122,165,0.9) 0%, rgba(1,40,64,0.56) 84%, rgba(1,40,64,0.5) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(24,122,165,0.9) 0%,rgba(1,40,64,0.56) 84%,rgba(1,40,64,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(24,122,165,0.9) 0%,rgba(1,40,64,0.56) 84%,rgba(1,40,64,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6187aa5', endColorstr='#80012840',GradientType=0 ); 
+    margin-left: 0%;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
 }
 /**Blog Posts**/
 
@@ -129,7 +184,6 @@ a:active {
 }
 
 #BlogPost {
-    background-image: url(..images-folder/recess_home.png);
     grid-area: BlogPost;
     margin-right: 15%;
 }
@@ -145,6 +199,9 @@ a:active {
     border-style: none;
     background-color: transparent;
 }
+.readMore:hover{
+    color: #187AA5;
+}
 .valueCommunity {
     grid-area: valueCommunity;
     margin-left: 15%
@@ -157,7 +214,54 @@ a:active {
     font-weight: 200;
     width: 85%;
 }
+/**MODAL CSS*/
 
+.modal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70vh;
+    grid-template-areas: 
+        "modalContent modalContent modalContent";
+    margin-left: 15%;
+    margin-right: auto;
+    z-index: 2;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modalContent {
+    grid-area: modalContent;
+    background-color: #187AA5;
+    position: relative;
+    padding: 5%;
+    width: 500px;
+    border: 5px white;
+    margin: 0 auto;
+    box-shadow: 3px 3px 10px 10px rgba(0,0,0,0.2);
+}
+.modalContent p {
+    font-weight: 700;
+    font-size: 35px;
+    font-family: Poppins;
+    color: white;
+}
+.modalContent a {
+    font-weight: 300;
+    font-size: 16px;
+    font-family: Poppins;
+    color: white;
+}
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+} 
+  .close:hover,
+  .close:focus {
+    color: #c1d959;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 /*Featured Projects*/
 .featuredProjects {

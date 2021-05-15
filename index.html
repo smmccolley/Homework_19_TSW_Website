@@ -6,6 +6,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link href="css-folder/style.css" rel="stylesheet" type="text/css">
+        <script src="js-folder/index.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     </head>
     <body>
         <nav class="primaryNav">
@@ -14,9 +16,9 @@
             </div>
             <nav class="navBar">
                 <a href="about.html">Who We Are</a>
-                <p>What We Do</p>
+                <a>What We Do</a>
                 <a href="casestudy.html">Why We Do It</a>
-                <p>How to Connect</p>
+                <a>How to Connect</a>
             </nav>
             <h3 class ="heroProject">
                 <p>Buckhead Redefined LCI</p>
@@ -55,6 +57,7 @@
                 </button>
             </div>
             
+            
             <div class="valueCommunity">
                 <h2 class="valueName">
                     <p>We Respect the Inherent Value of Community</p>
@@ -62,9 +65,19 @@
                 <h4 class="valueDesc">
                     <p>This is the first Core Value of our 30-year-old company.  As architects, planners, and landscape architects, we have worked towards creating and improving neighborhoods, towns, and cities so all people can live together and support each other. This statement affirms our belief that we are better together, and by sharing our strengths, differences, experiences, hopes, and dreams, we build a brighter future…</p>
                 </h4>
-                <button class="readMore">
+                <button class="readMore value">
                     <h4>READ MORE</h4>
                 </button>
+            </div>
+            <div id="modal">
+                <div class = "modalContent">
+                    <span class="close">&times;</span>
+                    <p>We Respect the Inherent Value of Community</p>
+                    <a>This is the first Core Value of our 30-year-old company.  As architects, planners, and landscape architects, we have worked towards creating and improving neighborhoods, towns, and cities so all people can live together and support each other.  This statement affirms our belief that we are better together, and by sharing our strengths, differences, experiences, hopes, and dreams, we build a brighter future for everyone.
+                        <br><br>Sadly, it has become obvious that we have not lived up to this ideal.  All of us at TSW deplore the institutionalized racism that continues to plague our city, state, and country.  We understand that the buildings, communities, and greenspaces we design, and especially the planning efforts we undertake, can either contribute to the problem or be part of the solution.  We pledge to do better with the choices we make and to remain committed to respect, inclusivity, and equity.  Internally, we are committed to expanding the diversity of our staff to better reflect the diversity of our city, while simultaneously increasing our own awareness and understanding.
+                        <br><br>In our business, we begin by sitting down with our clients and listening to their goals.  Their vision informs our work.  In the same way, we will listen, learn, and make better-informed decisions as we work together to help heal the racial injustice that continues to plague our communities and harm our neighbors.
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -108,6 +121,5 @@
                 </button>
             </div>
         </section>
-        
     </body>
 </html>
