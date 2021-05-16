@@ -1,5 +1,5 @@
-$('.readMore value').click(function(){
-    $("modal").show("slow");
+$('.readMore value').on ('click', function(){
+    $(".modal").show("slow");
 });
 // I've tried and deleted different versions of this**//
 //**var modal= (".communityModal");
