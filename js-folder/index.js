@@ -1,3 +1,10 @@
+$(".toggle").click(function(){
+  $(this).find(".toggleContainer").toggleClass("active");
+  $(this).siblings(".toggle").find(".toggleContainer").removeClass("active");
+});
+
+
+
 $('.readMore value').on ('click', function(){
     $(".modal").show("slow");
 });
@@ -16,49 +23,12 @@ var position = $( ".selector" ).dialog(".modal", "position");
 // Setter
 $( ".selector" ).dialog( "option", "position", { my: "left top", at: "left bottom", of: button } );
 
-<script>
+
 function myFunction() { 
-  document.getElementById("myDialog").showModal(); 
+  document.getElementById(".modal").showModal(); 
 } 
-</script>
 
-// examples from class activities//
-function fade() {
-    $('.preloader').fadeOut("slow");
-    }
-    setTimeout(fade, 3000);
 
-    $(".searchButton").on("click", function(){
-        $(".searchButton").toggleClass("active");
-        if ($(".searchButton").hasClass("active")) {
-          $(".searchBar").css("height", "100vh");
-          $("#searchForm").css("opacity","1");
-          $(".searchIcon").removeClass("fa-search").addClass("fa-times");
-        }
-        else {
-          $(".searchBar").css('height', "0vh");
-          $("#searchForm").css("opacity","0");
-          $(".searchIcon").removeClass("fa-times").addClass("fa-search");
-        }
-      });
-
-// example from class activities //
-
-      $('.tab').on("click", function(){
-  
-        if ($(this).hasClass("tab1")){
-          $(".tab1").addClass("active");
-          $(".tab2").removeClass("active");
-          $("#tabContent1").css("display", "block");
-          $("#tabContent2").css("display", "none");
-        }
-        else if ($(this).hasClass("tab2")){
-          $(".tab2").addClass("active");
-          $(".tab1").removeClass("active");
-          $("#tabContent2").css("display", "block");
-          $("#tabContent1").css("display", "none");
-        }
-      });
 
       // example from class activities //
       // Script to open and close sidebar

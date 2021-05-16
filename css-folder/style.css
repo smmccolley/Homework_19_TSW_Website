@@ -17,8 +17,31 @@
      background-size: cover;
      background-position: center;
      height:100vh;
-    
 }
+
+.toggleContainer {
+    padding: 15px;
+    display: none;
+    transition: all;
+}
+
+.toggleContainer:active {
+    display: block;
+    background-color: #187aa5;
+    cursor: pointer;
+    color: white;
+}
+.option {
+    display: block;
+    background-color: #187aa5;
+    cursor: pointer;
+    color: white;
+}
+
+.about .toggle {
+    cursor: pointer;
+}
+
 #logo {
     grid-area: logo;
     display: flex;
