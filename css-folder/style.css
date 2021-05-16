@@ -19,7 +19,7 @@
      height:100vh;
 }
 
-.toggleContainer {
+/* .toggleContainer {
     padding: 15px;
     display: none;
     transition: all;
@@ -36,11 +36,11 @@
     background-color: #187aa5;
     cursor: pointer;
     color: white;
-}
+} */
 
-.about .toggle {
+/* .about .toggle {
     cursor: pointer;
-}
+} */
 
 #logo {
     grid-area: logo;
@@ -226,7 +226,14 @@ a:active {
     border-style: none;
     background-color: transparent;
 }
-.readMore:hover{
+.readMore-value {
+    font-weight: 900;
+    text-decoration: underline;
+    border-color: none;
+    border-style: none;
+    background-color: transparent;
+}
+.readMore-value:hover{
     color: #187AA5;
 }
 .valueCommunity {
@@ -242,16 +249,13 @@ a:active {
     font-weight: 200;
     width: 85%;
 }
-/**MODAL CSS*/
 
-.modal{
-    display: flex;
+#modal{
+    display: none;
     flex-grow: 1;
     margin-left: 15%;
     margin-right: auto;
     z-index: 5;
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 .modalContent {
     background-color: #187AA5;
@@ -281,12 +285,18 @@ a:active {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    border-color: none;
+    border-style: none;
+    background-color: transparent;
 } 
   .close:hover,
   .close:focus {
     color: #c1d959;
     text-decoration: none;
     cursor: pointer;
+    border-color: none;
+    border-style: none;
+    background-color: transparent;
 }
 
 /*Featured Projects*/
