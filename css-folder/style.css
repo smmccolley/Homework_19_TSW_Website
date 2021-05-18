@@ -86,12 +86,15 @@ a:active {
     
 }
 .heroProject p {
+    display: flex;
+    align-content: center;
     margin-left: 25%;
     margin-right: 0 auto;
     color: white;
     width: 90%;
     font-weight: 700;
     margin-top: 45%;
+    
 }
 
 /*Studios*/
@@ -114,7 +117,7 @@ a:active {
         "planning architecture larch";
     text-align: center;
     align-content: center; 
-    margin-right: 3%;
+    margin-right: 2%;
     margin-left: -3%;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -127,6 +130,7 @@ a:active {
     background-image: url(../images-folder/buckhead_redefined.JPG);
     background-size: cover;
     margin-left: 15%;
+    margin-right: 0 auto;
     justify-content: center;
     align-items: center;
     
@@ -207,12 +211,13 @@ a:active {
     background-image: url(../images-folder/recess_home.png);
     background-size: cover;
     background-position: center;
-    margin-left: 25%;
+    margin-left: 30%;
 }
 
 #BlogPost {
     grid-area: BlogPost;
     margin-right: 15%;
+    margin-left: 0 auto;
 }
 
 .BlogDesc p {

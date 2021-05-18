@@ -17,6 +17,7 @@
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center; 
+     height: 80vh;
 }
 
 #logo {
@@ -24,7 +25,7 @@
     display: flex;
     position: relative;
     transform: scale(.5);
-    margin-left: -15%;
+    margin-left: -3%;
     margin-right: 0 auto;
     justify-content: flex-start;
 }
